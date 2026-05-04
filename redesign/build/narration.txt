@@ -1,0 +1,11 @@
+Here is a redesign concept for Typing Guide dot com. The original site feels dated. Long walls of text, low contrast, and a layout from another era. The new design is built around three principles. Focus, feedback, and progress.
+
+The hero leads with a single clear promise. Type faster, with less effort. And one primary action. A modern dark theme reduces eye strain during long practice sessions. And the floating keyboard hints at what the product actually does.
+
+Scrolling down, the live practice card is the centerpiece. Words per minute, accuracy, and time sit right above the passage. So the learner sees feedback in real time. Correct letters fade in. Mistakes turn red. No popups. No interruption.
+
+The lessons grid replaces the old list of links with adaptive tracks. Home row mastery, speed bursts, accuracy targets, and code typing for developers.
+
+Finally, the progress section turns numbers into a story. A trend chart shows improvement over time. And a weakest keys panel tells the learner exactly what to focus on next.
+
+The result. A faster, calmer, more motivating place to actually get better at typing.

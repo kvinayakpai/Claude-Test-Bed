@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TypingGuide — Learn to type, fast.</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="logo" href="#">
+        <span class="logo__mark">⌨</span>
+        <span class="logo__text">TypingGuide</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#practice">Practice</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#test">Speed Test</a>
+        <a href="#stats">Progress</a>
+      </nav>
+      <div class="nav__cta">
+        <button class="btn btn--ghost">Sign in</button>
+        <button class="btn btn--primary">Get started</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow">Free · No signup needed</span>
+        <h1>Type faster.<br/><span class="grad">With less effort.</span></h1>
+        <p class="lede">A focused typing trainer that adapts to your weakest keys.
+          Clean visuals, instant feedback, and lessons that actually work.</p>
+        <div class="hero__ctas">
+          <a href="#practice" class="btn btn--primary btn--lg">Start typing →</a>
+          <a href="#lessons" class="btn btn--ghost btn--lg">Browse lessons</a>
+        </div>
+        <div class="trustline">
+          <span>★★★★★</span><span>4.8 from 12,400 learners</span>
+        </div>
+      </div>
+      <div class="hero__panel" aria-hidden="true">
+        <div class="kbd-stack">
+          <div class="kbd-row">
+            <span class="kbd">Q</span><span class="kbd">W</span><span class="kbd kbd--hot">E</span><span class="kbd">R</span><span class="kbd">T</span>
+          </div>
+          <div class="kbd-row">
+            <span class="kbd">A</span><span class="kbd kbd--hot">S</span><span class="kbd">D</span><span class="kbd">F</span><span class="kbd">G</span>
+          </div>
+          <div class="kbd-row">
+            <span class="kbd">Z</span><span class="kbd">X</span><span class="kbd">C</span><span class="kbd kbd--hot">V</span><span class="kbd">B</span>
+          </div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num">+38%</div>
+          <div class="hero__stat-lbl">avg. WPM gain in 30 days</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="practice" class="practice">
+    <div class="practice__head">
+      <h2>Live practice</h2>
+      <p>Type the passage below. Mistakes turn red, correct letters fade in.</p>
+    </div>
+    <div class="typer card">
+      <div class="typer__meta">
+        <div class="metric"><span class="metric__num" id="wpm">0</span><span class="metric__lbl">WPM</span></div>
+        <div class="metric"><span class="metric__num" id="acc">100%</span><span class="metric__lbl">Accuracy</span></div>
+        <div class="metric"><span class="metric__num" id="time">0s</span><span class="metric__lbl">Time</span></div>
+        <button class="btn btn--ghost btn--sm" id="reset">Reset</button>
+      </div>
+      <div class="typer__text" id="text" tabindex="0"></div>
+      <div class="typer__hint">Click the passage and start typing. Tab + Enter restarts.</div>
+    </div>
+  </section>
+
+  <section id="lessons" class="lessons">
+    <div class="lessons__head">
+      <h2>Lessons that adapt</h2>
+      <p>Pick a track. We adjust difficulty based on your accuracy.</p>
+    </div>
+    <div class="grid">
+      <article class="card lesson">
+        <div class="lesson__icon">🏠</div>
+        <h3>Home row mastery</h3>
+        <p>Lock in <code>asdf jkl;</code> — the foundation of touch typing.</p>
+        <div class="lesson__meta"><span>Beginner</span><span>· 12 drills</span></div>
+      </article>
+      <article class="card lesson">
+        <div class="lesson__icon">⚡</div>
+        <h3>Speed bursts</h3>
+        <p>Short, high-tempo sprints to push your top WPM.</p>
+        <div class="lesson__meta"><span>Intermediate</span><span>· 20 drills</span></div>
+      </article>
+      <article class="card lesson">
+        <div class="lesson__icon">🎯</div>
+        <h3>Accuracy targets</h3>
+        <p>Get to 99% clean typing without slowing down.</p>
+        <div class="lesson__meta"><span>All levels</span><span>· 15 drills</span></div>
+      </article>
+      <article class="card lesson">
+        <div class="lesson__icon">💻</div>
+        <h3>Code typing</h3>
+        <p>Brackets, semicolons, and the symbols devs actually use.</p>
+        <div class="lesson__meta"><span>Advanced</span><span>· 18 drills</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="stats" class="stats">
+    <div class="stats__head">
+      <h2>See real progress</h2>
+      <p>Daily streaks, weakest keys, and a chart you'll actually look at.</p>
+    </div>
+    <div class="grid grid--2">
+      <div class="card stats__chart">
+        <div class="stats__chart-head">
+          <span>WPM over time</span>
+          <span class="badge">+38%</span>
+        </div>
+        <svg viewBox="0 0 400 160" class="chart" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,130 L40,118 L80,122 L120,100 L160,92 L200,78 L240,72 L280,55 L320,48 L360,30 L400,22 L400,160 L0,160 Z" fill="url(#g)"/>
+          <path d="M0,130 L40,118 L80,122 L120,100 L160,92 L200,78 L240,72 L280,55 L320,48 L360,30 L400,22" fill="none" stroke="#7c5cff" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="card stats__keys">
+        <div class="stats__chart-head"><span>Weakest keys</span><span class="badge badge--warn">Focus</span></div>
+        <ul class="weak-keys">
+          <li><span class="kbd">P</span><div class="bar"><div style="width:30%"></div></div><span class="muted">62% acc</span></li>
+          <li><span class="kbd">;</span><div class="bar"><div style="width:42%"></div></div><span class="muted">71% acc</span></li>
+          <li><span class="kbd">Q</span><div class="bar"><div style="width:55%"></div></div><span class="muted">78% acc</span></li>
+          <li><span class="kbd">Z</span><div class="bar"><div style="width:65%"></div></div><span class="muted">83% acc</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="foot__inner">
+      <span>© TypingGuide redesign concept</span>
+      <span>Built as a design demo</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

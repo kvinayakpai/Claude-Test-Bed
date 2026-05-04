@@ -1,0 +1,4 @@
+node_modules/
+build/video/
+build/voice_raw.wav
+package-lock.json
